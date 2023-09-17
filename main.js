@@ -33,7 +33,12 @@ function fetchSuperheroes(searchTerm) {
                 const img = document.createElement('img');
                 img.src = `${hero.thumbnail.path}.${hero.thumbnail.extension}`;
                 img.className = 'card-img-top';
-                card.appendChild(img);
+
+                // Add href for superhero details
+                const link = document.createElement('a')
+                link.href = "superherodetails/superhero.html?id="+hero.id
+                link.appendChild(img)
+                card.appendChild(link);
 
                 // Add superhero name
                 const cardBody = document.createElement('div');
@@ -49,13 +54,8 @@ function fetchSuperheroes(searchTerm) {
                 favoriteButton.textContent = 'Favorite';
                 favoriteButton.addEventListener('click', () => addToFavorites(hero));
                 cardBody.appendChild(favoriteButton);
-
-                // Add href for superhero details
-                const link = document.createElement('a')
-                link.href = "superherodetails/superhero.html?id="+hero.id
                 card.appendChild(cardBody);
-                link.appendChild(card)
-                superheroesContainer.appendChild(link);
+                superheroesContainer.appendChild(card);
             });
         })
         .catch((error) => {

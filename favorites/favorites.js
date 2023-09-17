@@ -17,7 +17,13 @@ function displayFavoriteSuperheroes() {
         const img = document.createElement('img');
         img.src = `${hero.thumbnail.path}.${hero.thumbnail.extension}`; // Use the image URL stored in local storage
         img.className = 'card-img-top';
-        card.appendChild(img);
+
+         // Add href for superhero details
+         const link = document.createElement('a')
+         link.href = "../superherodetails/superhero.html?id="+hero.id
+         link.appendChild(img)
+         card.appendChild(link);
+
 
         // Add superhero name
         const cardBody = document.createElement('div');
