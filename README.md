@@ -18,7 +18,11 @@ Make this list persistent (should have the same number of superheroes before and
 Remove from favourites button: Each superhero should have remove from favourites button, clicking on which should remove that superhero from the list.
 
 Note:-
-add cryptojs through <script>
+add cryptojs
 1. npm install crypto-js
 2. import like <script src="node_modules/crypto-js/crypto-js.js"></script> in html file.
+
+above technique will work in local but not on github, so better use CDN
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
 
