@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Details</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS here -->
+    <link rel="stylesheet" href="custom.css">
+    <!--Include crypto-js from node-modules-->
+    <script src="../node_modules/crypto-js/crypto-js.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Superhero Details</h1>
+        <br><br>
+
+        <!-- Superhero Name and Image Section -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-container">
+                    <!-- Superhero Image -->
+                    <img id="superhero-image" src="superhero-image.jpg" class="img-fluid" alt="Superhero Image">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- Superhero Name (highlighted) -->
+                <h2 id="superhero-name" class="highlighted-name">Superhero Name</h2>
+                <!-- About Superhero -->
+                <p id="superhero-bio" class="superhero-bio">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna nec
+                    justo maximus tincidunt. Nulla et rhoncus metus, id bibendum nunc. Proin ac
+                    sollicitudin purus.
+                </p>
+            </div>
+        </div>
+
+        <!-- Comics Section -->
+        <div class="row mt-4 bg-primary py-4 rounded">
+            <div class="col-md-6">
+                <div class="card p-2">
+                    <h3>Appearance in Comics</h3>
+                    <!-- List of comics and descriptions -->
+                    <ul id="comics-list" class="list-unstyled">
+                        <!-- Add more comics here -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Details about comics -->
+                <div id="comics-card" class="card">
+                    <img src="" id="comics-img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 id="comics-name" class="card-title">About Comics, click any from list</h5>
+                        <p id="comics-desc" class="card-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Events Section -->
+        <div class="row mt-4 p-2 bg-secondary rounded">
+            <div class="col-md-6">
+                <div class="card p-2">
+                    <h3>Events</h3>
+                    <!-- List of events -->
+                    <ul id="event-list" class="list-unstyled">
+                        <!-- Add more events here -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Additional Details Section -->
+            <div class="col-md-6">
+                <!-- Events Details -->
+                <div class="card">
+                    <img src="" id="event-img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 id="event-name" class="card-title">About Events, click any from list</h5>
+                        <p id="event-desc" class="card-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="superhero.js"></script>
+</body>
+
+</html>

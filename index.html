@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <!-- Link to Bootstrap CSS (you can download Bootstrap or use a CDN) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!--Include crypto-js from node-modules-->
+    <script src="node_modules/crypto-js/crypto-js.js"></script>
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-white">Superhero Hunter</h1>
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <!-- Search Bar -->
+                <input type="text" id="searchInput" class="form-control" placeholder="Search Superheroes...">
+            </div>
+        </div>
+        <div class="row mt-4 px-4">
+            <div class="col-md-8">
+                <!-- Display Top Superheroes -->
+                <h2 id="search-heading" class="text-white">Top Search</h2>
+            </div>
+            <div class="col-md-4 text-right">
+                <a href="favorites/favorites.html"><button class="btn btn-danger">Favorite Superheroes</button></a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div id="superheroes" class="card-columns">
+                    <!-- Superheroes will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+     <br><br>
+     <footer class="footer">
+        <p>Designed by Divyanshu</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS (you can download Bootstrap or use a CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your JavaScript file -->
+    <script src="main.js"></script>
+</body>
+</html>

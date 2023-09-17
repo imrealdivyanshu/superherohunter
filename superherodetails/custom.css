@@ -1,0 +1,43 @@
+/* Custom CSS for the superhero details page */
+body{
+    background-color: rgb(240, 232, 232);
+}
+.highlighted-name {
+    color: #007bff; /* Highlighted name color */
+}
+
+
+.container{
+    display: grid;
+
+}
+
+.superhero-bio {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comics-img{
+    max-height: 500px;
+    width:auto;
+}
+
+#comics-list li{
+    cursor: pointer;
+}
+#comics-list li:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Adjust spacing and styling for the list items */
+ul.list-unstyled li {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,29 @@
+body{
+    background-image: url('images/shutterstock_1556534186.webp');
+}
+
+/* Your custom CSS styles can go here */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+/* CSS for the footer */
+.footer {
+    text-align: center;
+    background-color: #333; /* Background color for the footer */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
