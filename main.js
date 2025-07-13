@@ -14,7 +14,7 @@ function fetchSuperheroes(searchTerm) {
     const timestamp = new Date().getTime();
     const hash = generateHash(timestamp);
 
-    const apiUrl = `https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${publicKey}&hash=${hash}&nameStartsWith=${searchTerm}`;
+    const apiUrl = `https://developer.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${publicKey}&hash=${hash}&nameStartsWith=${searchTerm}`;
 
     fetch(apiUrl)
         .then((response) => response.json())
